@@ -1,4 +1,3 @@
-const container = document.getElementsByClassName('box-container');
 const app = new Vue ({
 
   el: '#app',
@@ -6,7 +5,7 @@ const app = new Vue ({
   data: {
     marca: 'FIAT',
     modello: '500 Cabrio',
-    colore: 'Rosa metallizzato',
+    colore: '',
     immagine: 'img/500rosa.png',
     pneumatici: 'R-18',
     alimentazione: 'Benzina',
@@ -16,17 +15,45 @@ const app = new Vue ({
 
   methods: {
     stampaCar(){
+      const container = document.querySelector('.box-img');
       let html= 
         `
-        <div class="customer-car d-flex justify-content-center align-items-center flex-column">
-          <h3 class="model">Marca: {{marca}}</h3>
-          <h3 class="model">Modello: {{modello}}</h3>
-          <h3 class="model">Colore: {{colore}}</h3>
-          <h3 class="model">Pneumatici: {{pneumatici}}</h3>
-          <h3 class="model">Alimentazione: {{alimentazione}}</h3>
-          <img src="img/500rosa.png" alt="">
-        </div>
+        <img src="img/500rosa.png" alt=""> 
         `
+        console.log(this);
+      container.innerHTML = html;
+    },
+    colorPink(){
+      this.colore = 'rosa-metalizzato';
+      console.log('rosa');
+      const container = document.querySelector('.box-img');
+      let html= 
+        `
+        <img src="img/500rosa.png" alt=""> 
+        `
+        console.log(this);
+      container.innerHTML = html;
+    },
+    colorBlu(){
+      this.colore = 'blu-metalizzato';
+      const container = document.querySelector('.box-img');
+      let html= 
+        `
+        <img src="img/500blu.png" alt=""> 
+        `
+        console.log(this);
+      container.innerHTML = html;
+    },
+    colorAzzurro(){
+      this.colore = 'azzurro-metalizzato';
+      console.log('azzurro');
+      const container = document.querySelector('.box-img');
+      let html= 
+        `
+        <img src="img/500azzurra.png" alt=""> 
+        `
+        console.log(this);
+      container.innerHTML = html;
     }
   }
 })

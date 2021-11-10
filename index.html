@@ -17,15 +17,22 @@
       <button @click='stampaCar' class="btn btn-secondary">Guarda la nuova FIAT 500</button>
 
       <div class="customer-car d-flex justify-content-center align-items-center flex-column">
-        <h3 class="model">Marca: {{marca}}</h3>
-        <h3 class="model">Modello: {{modello}}</h3>
-        <h3 class="model">Colore: {{colore}}</h3>
-        <h3 class="model">Pneumatici: {{pneumatici}}</h3>
-        <h3 class="model">Alimentazione: {{alimentazione}}</h3>
-        <img src="img/500rosa.png" alt="">
+        <h3 :class='colore'>Marca: {{marca}}</h3>
+        <h3 :class='colore'>Modello: {{modello}}</h3>
+        <h3 :class='colore'>Colore: {{colore}}</h3>
+        <h3 :class='colore'>Pneumatici: {{pneumatici}}</h3>
+        <h3 :class='colore'>Alimentazione: {{alimentazione}}</h3>
+        <div class="box-car-img">
+          <div class="box-img">
+            <!-- <img src="img/500rosa.png" alt="">  -->
+          </div>
+          <div class="box-color d-flex justify-content-center align-items-center">
+            <div @click='colorPink' class="radius-rosa"></div>
+            <div @click='colorAzzurro'  class="radius-azzurro"></div>
+            <div @click='colorBlu'  class="radius-blue"></div>
+          </div>
+        </div>
       </div>
-
-
 
     </div>
   </div>

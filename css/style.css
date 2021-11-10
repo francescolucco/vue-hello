@@ -10,14 +10,17 @@
   padding: 30px 50px;
   margin: 40px;
 } 
-.rose-metalizzato{
+.rosa-metalizzato{
   color: rgb(226, 174, 202);
+  text-shadow: 1px 1px 1px white!important;
 }
 .azzurro-metalizzato{
   color: rgb(165, 206, 230);
+  text-shadow: 1px 1px 1px white!important;
 }
 .blu-metalizzato{
-  color: rgb(46, 43, 88);
+  color: white;
+  text-shadow: 5px 5px 5px rgb(46, 43, 88)!important;
 }
 #logo{
   width: 100px;
@@ -26,4 +29,31 @@
 .btn-secondary{
   border: 2px solid white;
   margin: 30px 0 20px 0;
+}
+.radius-rosa{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(226, 174, 202);
+  margin: 15px 25px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px white!important;
+}
+.radius-azzurro{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 15px 25px;
+  background-color: rgb(165, 206, 230);
+  cursor: pointer;
+  box-shadow: 0px 0px 3px white!important;
+}
+.radius-blue{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(46, 43, 88);
+  margin: 15px 25px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px white!important;
 }
