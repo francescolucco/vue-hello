@@ -16,45 +16,20 @@ const app = new Vue ({
   methods: {
     stampaCar(){
       document.querySelector('.customer-car').classList.remove('hide');
-      const container = document.querySelector('.box-img');
-      let html= 
-        `
-        <img src="img/500rosa.png" alt=""> 
-        `
-        console.log(this);
-      container.innerHTML = html;
+      this.immagine = 'img/500rosa.png';
+      
     },
     colorPink(){
       this.colore = 'rosa-metalizzato';
-      console.log('rosa');
-      const container = document.querySelector('.box-img');
-      let html= 
-        `
-        <img src="img/500rosa.png" alt=""> 
-        `
-        console.log(this);
-      container.innerHTML = html;
+      this.immagine = 'img/500rosa.png';
     },
     colorBlu(){
       this.colore = 'blu-metalizzato';
-      const container = document.querySelector('.box-img');
-      let html= 
-        `
-        <img src="img/500blu.png" alt=""> 
-        `
-        console.log(this);
-      container.innerHTML = html;
+      this.immagine = 'img/500blu.png';
     },
     colorAzzurro(){
       this.colore = 'azzurro-metalizzato';
-      console.log('azzurro');
-      const container = document.querySelector('.box-img');
-      let html= 
-        `
-        <img src="img/500azzurra.png" alt=""> 
-        `
-        console.log(this);
-      container.innerHTML = html;
+      this.immagine = 'img/500azzurra.png';
     }
   }
 })
