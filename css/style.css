@@ -1,0 +1,29 @@
+#app{
+  width: 100%;
+  background-image: url(../img/upload-5fc94fab12b68.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.box-container{
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 30px 50px;
+  margin: 40px;
+} 
+.rose-metalizzato{
+  color: rgb(226, 174, 202);
+}
+.azzurro-metalizzato{
+  color: rgb(165, 206, 230);
+}
+.blu-metalizzato{
+  color: rgb(46, 43, 88);
+}
+#logo{
+  width: 100px;
+  height: 100px;
+}
+.btn-secondary{
+  border: 2px solid white;
+  margin: 30px 0 20px 0;
+}
