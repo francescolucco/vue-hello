@@ -15,6 +15,7 @@ const app = new Vue ({
 
   methods: {
     stampaCar(){
+      document.querySelector('.customer-car').classList.remove('hide');
       const container = document.querySelector('.box-img');
       let html= 
         `
